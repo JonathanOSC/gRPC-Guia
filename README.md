@@ -749,16 +749,3 @@ Postman cuenta con soporte nativo para gRPC. Puedes interactuar visualmente con 
 | `Cannot find package '@grpc/grpc-js'` | Falta instalar paquetes en el cliente | Ejecuta `npm install` dentro de la carpeta `NodeClient` |
 
 ---
-
-## Lista de verificación para el entregable
-
-Antes de dar por concluido tu proyecto, verifica que cumple con todos los puntos requeridos:
-
-- [ ] Archivo `.proto` creado con sintaxis `proto3` conteniendo servicio, métodos y mensajes tipados.
-- [ ] Servidor implementado en C# (.NET) heredando de la clase generada (`WarehouseBase`).
-- [ ] Cliente implementado en Node.js consumiendo el contrato con `@grpc/grpc-js` y `@grpc/proto-loader`.
-- [ ] Al menos una llamada **Unaria** implementada y validada (`GetProductById`, `AddProduct`, `UpdateProduct`).
-- [ ] Al menos una llamada con **Server Streaming** implementada (`GetProductByName`).
-- [ ] Manejo correcto de errores con códigos de estado gRPC (`NotFound`, `AlreadyExists`, `InvalidArgument`).
-- [ ] Las dependencias se restauran correctamente con `dotnet restore` y `npm install`.
-- [ ] El servidor y cliente se ejecutan simultáneamente en terminales de VS Code sin errores de conexión.
